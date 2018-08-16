@@ -8,7 +8,7 @@ using WebApi.Models;
 
 namespace WebApi.Controllers {
 
-    [RoutePrefix("api/veiculo")]
+    [RoutePrefix("veiculo")]
     public class VeiculoController : ApiController {
         public static List<Veiculo> listaVeiculos = new List<Veiculo>();
 
@@ -43,6 +43,23 @@ namespace WebApi.Controllers {
         [AcceptVerbs("GET")]
         [Route("ConsultarVeiculos")]
         public List<Veiculo> ListarVeiculos() {
+            listaVeiculos = new List<Veiculo>()
+            { new Veiculo() { Codigo = 1, Placa = "BMW-2558", Frota = "CCV", Propriedade = true , TipoVeiculo = "Automóvel", TipoCarroceria = "Pick-Up",
+                Fabricante = "Fiat", Modelo = "Uno", AnoFabricacao = 2016, AnoModelo = 2017, Pais = "Brasil", Cidade= "Curitiba", Tara = 8500, CapacidadeDeCarga = 15000, Altura = 165,
+            Largura = 154, Comprimento = 300, Motorista = "Katia", Proprietario = "Lineu" },
+            new Veiculo() { Codigo = 2, Placa = "BMW-2558", Frota = "CCV", Propriedade = true , TipoVeiculo = "Automóvel", TipoCarroceria = "Pick-Up",
+                Fabricante = "Fiat", Modelo = "Uno", AnoFabricacao = 2016, AnoModelo = 2017, Pais = "Brasil", Cidade= "Curitiba",Tara = 8500, CapacidadeDeCarga = 15000, Altura = 165,
+            Largura = 154, Comprimento = 300, Motorista = "Katia", Proprietario = "Lineu" },
+            new Veiculo() { Codigo = 3, Placa = "BMW-2558", Frota = "CCV", Propriedade = true , TipoVeiculo = "Automóvel", TipoCarroceria = "Pick-Up",
+                Fabricante = "Fiat", Modelo = "Uno", AnoFabricacao = 2016, AnoModelo = 2017, Pais = "Brasil", Cidade= "Curitiba", Tara = 8500, CapacidadeDeCarga = 15000, Altura = 165,
+            Largura = 154, Comprimento = 300, Motorista = "Katia", Proprietario = "Lineu" },
+            new Veiculo() { Codigo = 4, Placa = "BMW-2558", Frota = "CCV", Propriedade = true , TipoVeiculo = "Automóvel", TipoCarroceria = "Pick-Up",
+                Fabricante = "Fiat", Modelo = "Uno", AnoFabricacao = 2016, AnoModelo = 2017, Pais = "Brasil", Cidade= "Curitiba", Tara = 8500, CapacidadeDeCarga = 15000, Altura = 165,
+            Largura = 154, Comprimento = 300, Motorista = "Katia", Proprietario = "Lineu" },
+            new Veiculo() { Codigo = 4, Placa = "BMW-2558", Frota = "CCV", Propriedade = true , TipoVeiculo = "Automóvel", TipoCarroceria = "Pick-Up",
+                Fabricante = "Fiat", Modelo = "Uno", AnoFabricacao = 2016, AnoModelo = 2017, Pais = "Brasil", Cidade= "Curitiba", Tara = 8500, CapacidadeDeCarga = 15000, Altura = 165,
+            Largura = 154, Comprimento = 300, Motorista = "Katia", Proprietario = "Lineu" }
+            };
             return listaVeiculos;
         }
 

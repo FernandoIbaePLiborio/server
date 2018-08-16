@@ -13,8 +13,8 @@ namespace WebApi.Models {
         private string tipoCarroceria;
         private string fabricante;
         private string modelo;
-        private DateTime anoFabricacao;
-        private DateTime anoModelo;
+        private int anoFabricacao;
+        private int anoModelo;
         private string pais;
         private string cidade;
         private Decimal tara;
@@ -26,7 +26,7 @@ namespace WebApi.Models {
         private string proprietario;
 
         public Veiculo() { }
-        public Veiculo(int codigo, string placa, string frota, Boolean propriedade, string tipoVeiculo, string tipoCarroceria, string fabricante, string modelo, DateTime anoFabricacao, DateTime anoModelo,
+        public Veiculo(int codigo, string placa, string frota, Boolean propriedade, string tipoVeiculo, string tipoCarroceria, string fabricante, string modelo, int anoFabricacao, int anoModelo,
             string pais, string cidade, Decimal tara, Decimal capacidadeDeCarga, Decimal altura, Decimal largura, Decimal comprimento, string motorista, string proprietario) {
             this.Codigo = codigo;
             this.Placa = placa;
@@ -57,8 +57,8 @@ namespace WebApi.Models {
         public string TipoCarroceria { get => tipoCarroceria; set => tipoCarroceria = value; }
         public string Fabricante { get => fabricante; set => fabricante = value; }
         public string Modelo { get => modelo; set => modelo = value; }
-        public DateTime AnoFabricacao { get => anoFabricacao; set => anoFabricacao = value; }
-        public DateTime AnoModelo { get => anoModelo; set => anoModelo = value; }
+        public int AnoFabricacao { get => anoFabricacao; set => anoFabricacao = value; }
+        public int AnoModelo { get => anoModelo; set => anoModelo = value; }
         public string Pais { get => pais; set => pais = value; }
         public string Cidade { get => cidade; set => cidade = value; }
         public decimal Tara { get => tara; set => tara = value; }
